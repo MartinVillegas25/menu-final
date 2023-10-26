@@ -23,9 +23,9 @@ const cloudinary = require('cloudinary').v2;
 cloudinary.config(process.env.CLOUDINARY_URL);
 
 //ruta get del home
-const homeGet = (req, res = response) => {
-	res.json('home');
-};
+// const homeGet = (req, res = response) => {
+// 	res.json('home');
+// };
 //get de la pagina de agregar cuenta como administrador
 
 //ruta POST  crear cuenta administrador
@@ -816,7 +816,7 @@ const cancelarPlan = (req, res) => {
 };
 
 module.exports = {
-	homeGet,
+	// homeGet,
 	loginUsuario,
 	dashboardLocal,
 	postUsuario,

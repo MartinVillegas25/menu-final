@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const {
-	homeGet,
+	// homeGet,
 	loginUsuario,
 	postUsuario,
 	mostrar,
@@ -59,7 +59,7 @@ const {
 const router = Router();
 
 //rutas get
-router.get('/', homeGet);
+// router.get('/', homeGet);
 router.get('/dashboard/config', [validarJWT], configGet);
 router.get('/dashboard', [validarJWT], dashboardLocal);
 router.get('/admin', [validarJWT, adminRol], adminGet);
