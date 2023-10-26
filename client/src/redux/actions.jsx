@@ -47,7 +47,7 @@ export function createUser(payload) {
 	return async function (dispatch) {
 		try {
 			const info = await axios.post(
-				'http://localhost:3000/subscription',
+				'https://menu-final-production.up.railway.app/subscription',
 				payload
 			);
 			console.log('entro en create');
@@ -68,7 +68,7 @@ export function createAdmin(payload) {
 		console.log('creando admin');
 		try {
 			const info = await axios.post(
-				'http://localhost:3000/admin-boss',
+				'https://menu-final-production.up.railway.app/admin-boss',
 				payload
 			);
 
