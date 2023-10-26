@@ -68,7 +68,7 @@ export function createAdmin(payload) {
 		console.log('creando admin');
 		try {
 			const info = await axios.post(
-				'/admin-boss',
+				'https://menu-final-production.up.railway.app/admin-boss',
 				payload
 			);
 
