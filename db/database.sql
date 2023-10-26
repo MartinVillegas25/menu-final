@@ -22,7 +22,7 @@ CREATE TABLE usuarios (
   tipo varchar(20) NOT NULL,
   comentario varchar(200) NULL;
   pagoConfirmado boolean DEFAULT FALSE NULL;
-  pagoCambioPlan boolean DEFAULT FALSE NULL ;
+  pagoCambioPlan boolean DEFAULT TRUE NULL ;
   PRIMARY KEY (id)
 );
 
