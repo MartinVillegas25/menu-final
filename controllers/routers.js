@@ -26,6 +26,7 @@ cloudinary.config(process.env.CLOUDINARY_URL);
 const homeGet = (req, res = response) => {
 	res.json('home');
 };
+//get de la pagina de agregar cuenta como administrador
 
 //ruta POST  crear cuenta administrador
 
@@ -301,7 +302,6 @@ const postUsuario = async (req, res = response) => {
 };
 
 //ruta de agradecimiento despues del pago
-
 
 
 //ruta de los webhook de mercado pago para guardar el estado a aprobado

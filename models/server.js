@@ -28,10 +28,10 @@ class Server {
 	}
 
 	middelewares() {
-		const __dirname = path.resolve();
-		const ruta = __dirname +'/client/dist';
-		//directorio static
-		this.app.use(express.static(ruta));
+		// const __dirname = path.resolve();
+		// const ruta = __dirname +'/client/dist';
+		// //directorio static
+		// this.app.use(express.static(ruta));
 
 		this.app.use(cors());
 		this.app.use(morgan('dev'));

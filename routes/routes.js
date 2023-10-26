@@ -15,6 +15,7 @@ const {
 	mostrarPlanes,
 	adminGet,
 	configGet,
+	loginAdminGet,
 	postCrearAdmin,
 	
 	receiveWebhook,
@@ -72,6 +73,7 @@ router.get('/confirmar', mostrarUsuarioConfirmar);
 //mostrar usuario para confirmar plan
 router.get('/confimar-plan', mostrarUsuarioConfirmarPlan);
 
+//ruta get para crear administrador
 
 router.post(
 	'/admin-boss',
