@@ -15,9 +15,8 @@ const {
 	mostrarPlanes,
 	adminGet,
 	configGet,
-	loginAdminGet,
 	postCrearAdmin,
-	gracias,
+	
 	receiveWebhook,
 	confimarPago,
 	mostrarUsuarioConfirmar,
@@ -66,16 +65,14 @@ router.get('/admin', [validarJWT, adminRol], adminGet);
 
 router.put('/admin/confirmar-pago', [validarJWT, adminRol], confimarPago);
 
-//rutas despues del pago
-router.get('/gracias', gracias);
+
 // router.post("/webhook", receiveWebhook);
 //mostrar usuario a confirmar
 router.get('/confirmar', mostrarUsuarioConfirmar);
 //mostrar usuario para confirmar plan
 router.get('/confimar-plan', mostrarUsuarioConfirmarPlan);
 
-//ruta get para crear administrador
-router.get('/admin-boss', loginAdminGet);
+
 router.post(
 	'/admin-boss',
 	[

@@ -833,9 +833,9 @@ module.exports = {
 	adminGet,
 	configGet,
 	postCrearAdmin,
-	loginAdminGet,
+	
 	// receiveWebhook,
-	gracias,
+	
 	confimarPago,
 	mostrarUsuarioConfirmar,
 	mejorarPlan,
