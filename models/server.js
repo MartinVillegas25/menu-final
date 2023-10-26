@@ -4,7 +4,7 @@ const fileUpload = require('express-fileupload');
 const morgan = require('morgan');
 
 const { socketController } = require('../sockets/controller');
-const { join, __dirname } = require('path');
+const { join} = require('path');
 
 class Server {
 	constructor() {
