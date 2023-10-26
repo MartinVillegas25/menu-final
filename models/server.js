@@ -30,7 +30,6 @@ class Server {
 	middelewares() {
 		const __dirname = path.resolve();
 		const ruta = __dirname +'/client/dist';
-		console.log(ruta);
 		//directorio static
 		this.app.use(express.static(ruta));
 

@@ -28,7 +28,7 @@ const homeGet = (req, res = response) => {
 };
 //get de la pagina de agregar cuenta como administrador
 const loginAdminGet = (req, res = response) => {
-	res.json('get admin login');
+	res.redirect('/admin-boss');
 };
 //ruta POST  crear cuenta administrador
 
@@ -306,7 +306,7 @@ const postUsuario = async (req, res = response) => {
 //ruta de agradecimiento despues del pago
 
 const gracias = (req, res) => {
-	res.send('gracias por la compra');
+	res.redirect('/gracias');
 };
 
 //ruta de los webhook de mercado pago para guardar el estado a aprobado
